@@ -26,20 +26,6 @@
   ); /* Optional: adjust opacity of the background color */
 }
 
-body.modal-open header {
-  padding-right: 0 !important;
-}
-
-/* Adjust body padding to account for scrollbar removal */
-body.modal-open {
-  padding-right: 0 !important;
-}
-
-body.modal-open {
-  padding-right: 0 !important;
-  overflow: visible !important;
-}
-
 /* Ensures the modal looks good on all devices */
 @media (max-width: 576px) {
   .modal-dialog {
@@ -55,6 +41,69 @@ body.modal-open {
     gap: 10px;
   }
 } /* Custom red button color for Cancel and Submit */
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Prevent padding-right on header when any modal is open */
+body.modal-open header {
+  padding-right: 0 !important;
+}
+
+/* Adjust body padding to account for scrollbar removal when any modal is open */
+body.modal-open {
+  padding-right: 0 !important;
+  overflow: visible !important;
+}
+
+/* Specific styles for the success modal */
+.success-modal .modal-dialog {
+  max-width: 500px; /* Adjust the width of the modal */
+  margin: 1.75rem auto; /* Adjust the margin around the modal */
+}
+
+.success-modal .modal-content {
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow */
+  padding: 1rem; /* Padding inside the modal */
+}
+
+.success-modal .modal-header {
+  border-bottom: none; /* Remove the bottom border */
+  padding-bottom: 0; /* Adjust the padding */
+}
+
+#successModalLabel {
+  font-size: 1.5rem; /* Adjust the font size */
+  font-weight: bold; /* Make the title bold */
+  color: #333; /* Change the color */
+  text-align: center; /* Center the text */
+  margin-bottom: 0; /* Adjust the margin */
+}
+
+.success-modal .modal-body {
+  font-size: 1rem; /* Adjust the font size */
+  color: #555; /* Change the color */
+  padding-top: 0; /* Adjust the padding */
+}
+
+.success-modal .modal-backdrop {
+  backdrop-filter: blur(10px); /* Add a blur effect */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the background color and opacity */
+}
+
+/* Custom red button color for Cancel and Submit */
 .btn-danger {
   background-color: #dc3545;
   border-color: #dc3545;
