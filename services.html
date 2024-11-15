@@ -37,6 +37,9 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!--Modal Window CSS File -->
+    <link rel="stylesheet" href="assets/css/modal.css" />
   </head>
 
   <body>
@@ -102,7 +105,11 @@
               <i class="ri-code-s-slash-line icon"></i>
               <h3>პროგრამირება</h3>
               <p>18 წლიდან</p>
-              <a href="./services.html" class="read-more"
+              <a
+                href="./services.html"
+                class="read-more"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 ><span>რეგისტრაცია</span> <i class="bi bi-arrow-right"></i
               ></a>
             </div>
@@ -118,7 +125,11 @@
 
               <h3>ქსელები და კიბერუსაფრთხოება</h3>
               <p>16 წლიდან</p>
-              <a href="./services.html" class="read-more"
+              <a
+                href="./services.html"
+                class="read-more"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 ><span>რეგისტრაცია</span> <i class="bi bi-arrow-right"></i
               ></a>
             </div>
@@ -133,7 +144,11 @@
               <i class="ri-brush-2-fill icon"></i>
               <h3>UI/ UX დიზაინი</h3>
               <p>16 წლიდან</p>
-              <a href="./services.html" class="read-more"
+              <a
+                href="./services.html"
+                class="read-more"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 ><span>რეგისტრაცია</span> <i class="bi bi-arrow-right"></i
               ></a>
             </div>
@@ -148,7 +163,11 @@
               <i class="ri-computer-line icon"></i>
               <h3>IT მხარდაჭერა</h3>
               <p>16 წლიდან</p>
-              <a href="./services.html" class="read-more"
+              <a
+                href="./services.html"
+                class="read-more"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 ><span>რეგისტრაცია</span> <i class="bi bi-arrow-right"></i
               ></a>
             </div>
@@ -164,7 +183,11 @@
 
               <h3>ინტერიერის დიზაინი</h3>
               <p>15 წლიდან</p>
-              <a href="./services.html" class="read-more"
+              <a
+                href="./services.html"
+                class="read-more"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 ><span>რეგისტრაცია</span> <i class="bi bi-arrow-right"></i
               ></a>
             </div>
@@ -179,7 +202,11 @@
               <i class="ri-funds-box-line icon"></i>
               <h3>მონაცემთა ანალიტიკოსი</h3>
               <p>18 წლიდან</p>
-              <a href="./services.html" class="read-more"
+              <a
+                href="./services.html"
+                class="read-more"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 ><span>რეგისტრაცია</span> <i class="bi bi-arrow-right"></i
               ></a>
             </div>
@@ -316,6 +343,100 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- Trigger Button -->
+
+    <!-- 
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+
+      add this on anchor elements or buttons to trigger modal window
+   -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- Updated Modal Title -->
+            <h5 class="modal-title" id="exampleModalLabel">
+              დატოვეთ თქვენი საკონტაქტო ინფორმაცია და ჩვენ დაგიკავშირდებით
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Form with inputs for First Name, Last Name, and Email -->
+            <form id="registrationForm" novalidate>
+              <div class="mb-3">
+                <label for="firstName" class="form-label">სახელი</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  required
+                  pattern="^[A-Za-zა-ჰ]+$"
+                />
+                <div class="invalid-feedback">
+                  <!-- Custom invalid feedback messages -->
+                  <div id="firstNameError"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">გვარი</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  required
+                  pattern="^[A-Za-zა-ჰ]+$"
+                />
+                <div class="invalid-feedback">
+                  <!-- Custom invalid feedback messages -->
+                  <div id="lastNameError"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">ელ-ფოსტა</label>
+                <input type="email" class="form-control" id="email" required />
+                <div class="invalid-feedback">
+                  <!-- Custom invalid feedback messages -->
+                  <div id="emailError"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <!-- Updated Cancel button text and color -->
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              გაუქმება
+            </button>
+            <!-- Submit button with same color as Cancel -->
+            <button
+              type="submit"
+              form="registrationForm"
+              class="btn btn-primary"
+            >
+              რეგისტრაცია
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <a
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center"
@@ -333,5 +454,9 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Modal Window JS File -->
+
+    <script src="assets/js/modal.js"></script>
   </body>
 </html>

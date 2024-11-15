@@ -1,0 +1,66 @@
+/* this styles is for modal window */
+
+.modal-dialog {
+  max-width: 400px; /* Fixed max width */
+  width: 100%; /* Full width on smaller screens */
+  margin: 1.75rem auto; /* Center modal vertically */
+  z-index: 10000;
+}
+
+.modal-content {
+  padding: 1rem;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+}
+
+.modal-backdrop {
+  backdrop-filter: blur(
+    10px
+  ); /* Adjust the blur strength (e.g., 10px for stronger blur) */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: adjust opacity of the background color */
+}
+
+body.modal-open header {
+  padding-right: 0 !important;
+}
+
+/* Adjust body padding to account for scrollbar removal */
+body.modal-open {
+  padding-right: 0 !important;
+}
+
+body.modal-open {
+  padding-right: 0 !important;
+  overflow: visible !important;
+}
+
+/* Ensures the modal looks good on all devices */
+@media (max-width: 576px) {
+  .modal-dialog {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 306px) {
+  .modal-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+} /* Custom red button color for Cancel and Submit */
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
