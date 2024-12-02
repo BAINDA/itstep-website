@@ -1467,3 +1467,27 @@ section {
     background-position: 0%;
   }
 }
+
+/* Custom Scrollbar Styles */
+
+/* WebKit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4154f1; /* Color of the scrollbar thumb */
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 12px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: #3963ff #f1f1f1; /* Color of the scrollbar thumb and track */
+}
