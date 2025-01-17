@@ -24,7 +24,8 @@
 - **📑 Multi-Page Website:** The platform features a 4-page structure, including sections for courses, about, contact, and more for easy navigation.
 - **🔍 User-Friendly Navigation:** Easily navigate between different pages with a clean, intuitive layout.
 - **📝 Course Registration with Success Modal:** Users can register for courses using a modal window. After completing the registration form and clicking submit, a success modal is displayed, confirming the registration.
-
+- **📬 Contact Form Submission:** The Contact page features a simple and secure form powered by FormSubmit.co. Upon submission, the form sends the user's message directly to the project's associated Gmail account and redirects them to a custom thanks.html page, confirming successful delivery. This ensures a seamless and user-friendly experience.
+- **🌟 SEO-Optimized Meta Tags:** Each webpage includes meta tags to improve search engine visibility and enhance sharing on social platforms.
 ---
 
 ## 💻 Technologies Used
