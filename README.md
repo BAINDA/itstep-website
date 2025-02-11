@@ -26,6 +26,8 @@
 - **📝 Course Registration with Success Modal:** Users can register for courses using a modal window. After completing the registration form and clicking submit, a success modal is displayed, confirming the registration.
 - **📬 Contact Form Submission:** The Contact page features a simple and secure form powered by FormSubmit.co. Upon submission, the form sends the user's message directly to the project's associated Gmail account and redirects them to a custom thanks.html page, confirming successful delivery. This ensures a seamless and user-friendly experience.
 - **🌟 SEO-Optimized Meta Tags:** Each webpage includes meta tags to improve search engine visibility and enhance sharing on social platforms.
+- **⚡ Custom Preloader:** A smooth, custom preloader ensures that the user has a polished experience while the page loads.
+- **🚫 Custom 404 Page:** The website features a custom 404 error page that redirects users back to the homepage, guiding them smoothly if they encounter an invalid URL.
 ---
 
 ## 💻 Technologies Used
